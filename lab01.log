@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.7.27)  12 SEP 2014 03:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.7.27)  12 SEP 2014 03:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -366,8 +366,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen120
 \Gm@layoutvoffset=\dimen121
 \Gm@dimlist=\toks22
-)
-No file lab01.aux.
+) (./lab01.aux)
 \openout1 = `lab01.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -382,6 +381,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
+
 (/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count103
@@ -528,8 +528,8 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3] [4 <./index.png>] (./lab01.aux) ) 
 Here is how much of TeX's memory you used:
- 3076 strings out of 493308
- 39513 string characters out of 6143616
+ 3078 strings out of 493308
+ 39533 string characters out of 6143616
  113556 words of memory out of 5000000
  6487 multiletter control sequences out of 15000+600000
  12265 words of font info for 48 fonts, out of 8000000 for 9000
@@ -544,7 +544,7 @@ public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
 sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on lab01.pdf (4 pages, 119956 bytes).
+Output written on lab01.pdf (4 pages, 119972 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
