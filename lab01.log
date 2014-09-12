@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.7.27)  12 SEP 2014 16:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.7.27)  12 SEP 2014 19:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -504,12 +504,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--82
+Underfull \hbox (badness 10000) in paragraph at lines 81--83
 
  []
 
@@ -541,7 +541,7 @@ public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
 sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on lab01.pdf (5 pages, 123754 bytes).
+Output written on lab01.pdf (5 pages, 123765 bytes).
 PDF statistics:
  63 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream
