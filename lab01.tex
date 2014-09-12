@@ -29,13 +29,11 @@ Um pêndulo foi montado com uma barra metálica maior e outra adicional colocada
 \subsection{Dados Obtidos}
 
 As medidas da posição do centro de massa das barras, relativo à extremidade inferior do pêndulo, são: \\
-$ x_1 = (0.0915 \pm 0.0005) M$\\
-$ x_2 = (0.7420 \pm 0.0005) M$\\
-
-
+$$ x_1 = (0.0915 \pm 0.0005) M$$
+$$ x_2 = (0.7420 \pm 0.0005) M$$
 E suas Massas:\\
-$ M_1 = (347.3 \pm 0.1) g $\\
-$ M_2 = (929.5 \pm 0.1) g $\\
+$$ M_1 = (347.3 \pm 0.1) g $$
+$$ M_2 = (929.5 \pm 0.1) g $$
 
 
 As medidas de periodo tomadas estão presentes na seguinte tabela, relacionadas as distâncias do eixo de rotação à extremidade inferior do pêndulo. \\
@@ -70,7 +68,8 @@ X (M) & \multicolumn{7}{c|}{Medidas de Periodo (s)} & Valor Médio \\
 \subsection{Centro de Massa}
 A posição do do centro de Massa relativo a extrememidade inferior pode ser calculado como\\
 $$ x_{cm} = \frac{x_1 \cdot M_1 + x_2 \cdot M_2}{M_1 + M_2} = 0.555 M $$\\ \\
-O erro associado à essa medida, propagado a partir dos erros de $x_1$, $M_1$, $x_2$ e $M_2$ é de $$ \Delta x_{cm} =  0.009 M $$
+O erro associado à essa medida, propagado a partir dos erros de $x_1$, $M_1$, $x_2$ e $M_2$ é de 
+$$ \Delta x_{cm} =  0.009 M $$
 
 
 \subsection{Períodos}
@@ -79,8 +78,10 @@ Pode ser reescrita como
 \begin{equation} \label{eq:funcao}
  T^2D = \frac{4\pi^2}{g} \cdot D^2 + \frac{4\pi^2}{g} \cdot k^2 
 \end{equation}
-Em que $D = X - x_{cm} $.\\
+Sendo que $$D = X - x_{cm} $$ 
+$$ \Delta D = \sqrt{{\Delta X}^2 + {\Delta x_{cm}}^2}  = 0.009M$$
 Percebe-se que deve existir uma relação linear entre $T^2D$ e $D^2$.
+\newpage
 
 
   
@@ -107,7 +108,6 @@ D (M)& T(s) & $D^2$ & $T^2D$ \\
 
 \caption{Periodos de oscilação relacionados à distância $D$ dos eixo de rotação ao centro de massa. O erro em D é constante igual a $0.009 M$ (propagado a partir do erro em X e em $x_{cm}$) e o erro em $T^2D$ foi propagado a partir do erro em D e em T.}
 \end{table}
-
 Fazendo a regressão linear de $T^2D$ X $D^2$ por mínimos quadrados, obtem-se os coeficientes $$ a = 3.8 \pm 0.2 $$  $$ b = 0.83 \pm 0.04 $$ onde $a$ é o coeficiente angular e $b$ é o coeficiente linear.
 
 \begin{figure}[!hbtbp]
@@ -121,20 +121,22 @@ A interpretação física do coeficiente angular encontrado é (equação \ref{e
   logo podemos encontrar $g$ como 
   $$ g = \frac{4\pi^2}{3.8} = 10.32 M/s^2 $$ 
   e seu erro associado, propagado a partir do erro em $a$ é
-  $$ \Delta g =\pm 0.05 M/s^2 $$
+  $$ \Delta g = \frac{4\pi^2}{a^2} \cdot \Delta a = \pm 0.6 M/s^2 $$
   
 \subsection{Raio de giração}
 
 A interpretação física do coeficiente linear da equação \ref{eq:funcao} é 
 $$ b = \frac{4\pi^2}{g} \cdot k^2 = 0.83 \pm 0.04 $$
 logo, 
-$$ k = \sqrt{\frac{g \cdot b}{4\pi^2}} = 2.9 $$
-$$ \Delta k = \pm 0.2 $$
+$$ k = \sqrt{\frac{g \cdot b}{4\pi^2}} = 0.46 $$
+$$ \Delta k = \pm 0.02 $$
 
 \subsection{Momento de Inércia}
 O momento de inércia pode ser descrito em função do raio de giração como 
-$$ I_{cm} = Mk^2 $$
-
+$$ I_{cm}  = Mk^2 $$
+$$ I_{cm}  = 0.28 (M \cdot Kg)$$
+E o erro $ \Delta I_{cm}$ pode ser calculado a partir da expressão 
+$$\Delta I_{cm}  =\sqrt{(2Mk \cdot \Delta k)^2 + (k^2 \cdot \Delta M)^2} = \pm 0.02 (M \cdot Kg) $$
 
 \section{Conclusões}
 
