@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.7.27)  12 SEP 2014 03:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.7.27)  12 SEP 2014 13:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -503,7 +503,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
-
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
@@ -513,41 +513,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
-[2] <index.png, id=17, 875.27pt x 572.1375pt>
+<index.png, id=16, 875.27pt x 572.1375pt>
 File: index.png Graphic file (type png)
  <use index.png>
-Package pdftex.def Info: index.png used on input line 112.
+Package pdftex.def Info: index.png used on input line 115.
 (pdftex.def)             Requested size: 481.4pt x 314.67659pt.
 
-Overfull \hbox (13.97723pt too wide) in paragraph at lines 112--113
+Overfull \hbox (13.97723pt too wide) in paragraph at lines 115--116
 [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[3] [4 <./index.png>] (./lab01.aux) ) 
+[3] [4 <./index.png>] [5] (./lab01.aux) ) 
 Here is how much of TeX's memory you used:
- 3078 strings out of 493308
- 39533 string characters out of 6143616
- 113556 words of memory out of 5000000
- 6487 multiletter control sequences out of 15000+600000
+ 3079 strings out of 493308
+ 39544 string characters out of 6143616
+ 114564 words of memory out of 5000000
+ 6488 multiletter control sequences out of 15000+600000
  12265 words of font info for 48 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,8n,32p,704b,238s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf
--dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on lab01.pdf (4 pages, 119972 bytes).
+</usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on lab01.pdf (5 pages, 121651 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 63 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
