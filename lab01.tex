@@ -1,10 +1,11 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
+\usepackage{breqn}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage[margin=0.9in]{geometry}
+\usepackage[margin=0.8in]{geometry}
 
 
 \begin{document}
@@ -23,15 +24,24 @@
 \maketitle
 \newpage
 \section{Resumo}
-O experimento é um estudo do pêndulo composto (formado por uma barra de alumínio e outra ferro acoplada) e seu comportamento. Medida a massa das barras, é realizada a cronometragem dos períodos de oscilação do pêndulo para diferentes configurações.\\
-A partir dos valores dos períodos (T) e das distâncias dos diferentes eixos de rotação ao centro de massa (D) do pêndulo, é feito o gráfico $T^2D$ x $D^2$ representando a função afim $T^2D = (4pi^2/g)D^2 + 4pi^2k^2/g$, sendo k o raio de giração do pêndulo. Assim, utilizando-se o método dos mínimos quadrados, foram obtidos os valores do raio de giração: $k = (0.465 \pm 0.001)m$ e da aceleração da gravidade: $g = (10.34 \pm 0.06) m/s^2$, valor não dentro do esperado, tendo o valor da aceleração da gravidade como cerca de $9.8 m/s^2$, mesmo considerando a margem de erro. Como o momento de inércia do pêndulo em relação ao centro de massa é dado por $(M1 + M2)*k^2$, foi possível calcular seu valor: $Icm = (0.28 +- 0.02)Kg.m^2$.
+
+O experimento é um estudo do pêndulo composto (formado por uma barra de alumínio e outra de ferro acoplada) e seu comportamento. Medidas as massas das barras, é realizada a cronometragem dos períodos de oscilação do pêndulo para diferentes configurações.\\\\
+A partir dos valores dos períodos (T) e das distâncias dos diferentes eixos de rotação ao centro de massa (D) do pêndulo, é feito o gráfico $T^2D$ x $D^2$ representando a função afim $T^2D = (4pi^2/g)D^2 + 4pi^2k^2/g$, sendo k o raio de giração do pêndulo. Assim, utilizando-se o método dos mínimos quadrados, foram obtidos os valores do raio de giração $k = (0.465 \pm 0.001)m$ e da aceleração da gravidade $g = (10.34 \pm 0.06) m/s^2$, valor não dentro do esperado, considerando o valor teórico de $9.8 m/s^2$, não abrangido pela margem de erro. Como o momento de inércia do pêndulo em relação ao centro de massa é dado pela fórmula $(M1 + M2)*k^2$, foi possível calcular seu valor como $Icm = (0.28 +- 0.02)Kg.m^2$.
 \section{Objetivos}
 Investigar o movimento de um pêndulo e seu comportamento relacionando as grandezas sobre ele atuantes, como centro de massa, raio de giração e momento de inércia.
 
 \section{Procedimento Experimental e Coleta de Dados}
 \subsection{Procedimento}
 
-Um pêndulo foi montado com uma barra metálica maior de alumínio e outra adicional de ferro colocada em sua extremidade inferior. Depois de devidamente medido (com fita métrica) e pesado (com balança analítica), ele foi fixado em um eixo de suspensão. No ponto mais baixo da trajetória do instrumento, foi acoplado um photogate ligado a um cronômetro inteligente adaptado a medição dos periodos (T) de oscilação do pêndulo. Assim, com o devido cuidado de acionar uma oscilação de ângulo menor que 15 graus para efeitos de aproximação, foram medidos tais períodos 7 vezes em cada uma das 6 configurações escolhidas, diferenciadas quanto às distâncias entre eixo fixo e centro de massa do pêndulo.\\
+Um pêndulo foi montado com uma barra metálica maior de alumínio e outra adicional de ferro colocada em sua extremidade inferior. Depois de devidamente medido (com fita métrica) e pesado (com balança analítica), ele foi fixado em um eixo de suspensão. No ponto mais baixo da trajetória do instrumento, foi acoplado um photogate ligado a um cronômetro inteligente adaptado a medição dos periodos (T) de oscilação do pêndulo. Assim, com o devido cuidado de acionar uma oscilação de ângulo menor que 15 graus para efeitos de aproximação, foram medidos tais períodos 7 vezes em cada uma das 6 configurações escolhidas, diferenciadas pela distância entre o eixo fixo e o centro de massa do pêndulo. As medições foram anotadas e estão inclusas em sua totalidade no relatório. A montagem do experimento pode ser vista nas imagens a seguir.\\
+
+\includegraphics[scale=0.30]{1.jpg} 
+\includegraphics[scale=0.30]{2.jpg} 
+\includegraphics[scale=0.30]{3.jpg} 
+\emph{Figuras 1, 2 e 3: Montagem do experimento.}
+
+
+
 
 \subsection{Dados Obtidos}
 
@@ -43,11 +53,11 @@ $$ M_1 = (347.3 \pm 0.1) g $$
 $$ M_2 = (929.5 \pm 0.1) g $$
 
 
-As medidas de periodo tomadas estão presentes na seguinte tabela, relacionadas as distâncias do eixo de rotação à extremidade inferior do pêndulo. \\
+As medidas de periodo tomadas estão presentes na seguinte tabela, relacionadas às distâncias do eixo de rotação à extremidade inferior do pêndulo. \\
 
 \begin{table}[!htbp]
-
-{Tabela 1: Medidas do Periodo de oscilação do pêndulo e suas médias aritméticas relacionadas à distância X do eixo de rotação à extremidade inferior do pêndulo.}\\[10pt] 	%% Preferi reduzir o título e colocar os erros (mesmo os ctes) na tabela. Podemos mudar isso de novo caso queira.
+\centering
+\caption{ Medidas do Periodo de oscilação do pêndulo e suas médias aritméticas relacionadas à distância X do eixo de rotação à extremidade inferior do pêndulo.} 	%% Preferi reduzir o título e colocar os erros (mesmo os ctes) na tabela. Podemos mudar isso de novo caso queira.
 
 \def\arraystretch{1.5}
 \begin{tabular}{|l| c c c c c c c|r|}
@@ -70,20 +80,20 @@ $0.7915\pm0.0005$ & 2.1042 & 2.1027 & 2.1027 & 2.1024 & 2.1026 & 2.1023 & 2.1019
 
 \emph{Nota: erro instrumental do cronômetro = $0.0001$s.\\ erro total calculado com base nos erros estatísticos e instrumentais.}
 \end{table}
-
-
 \newpage
+
 
 \section{Análise dos Resultados e Discussões}
 \subsection{Centro de Massa}
-A posição do do centro de Massa relativo a extrememidade inferior pode ser calculado como\\
-$$ x_{cm} = \frac{x_1 \cdot M_1 + x_2 \cdot M_2}{M_1 + M_2} = 0.5552 M $$\\ \\
-O erro associado à essa medida, propagado a partir dos erros de $x_1$, $M_1$, $x_2$ e $M_2$ é de 
+A posição do do centro de Massa relativo à extremidade inferior pode ser calculado como\\
+$$ x_{cm} = \frac{x_1 \cdot M_1 + x_2 \cdot M_2}{M_1 + M_2} = 0.5552 m $$\\ \\
+O erro associado a essa medida, propagado a partir dos erros de $x_1$, $M_1$, $x_2$ e $M_2$ é de 
+
 
 % PUTA QUE O PARIU
-$$ \sqrt{\Delta m_{1}^{2} \left(\frac{x_{1}}{m_{1} + m_{2}} - \frac{m_{1} x_{1} + m_{2} x_{2}}{\left(m_{1} + m_{2}\right)^{2}}\right)^{2} + \Delta m_{2}^{2} \left(\frac{x_{2}}{m_{1} + m_{2}} - \frac{m_{1} x_{1} + m_{2} x_{2}}{\left(m_{1} + m_{2}\right)^{2}}\right)^{2} + \frac{\Delta x_{1}^{2} m_{1}^{2}}{\left(m_{1} + m_{2}\right)^{2}} + \frac{\Delta x_{2}^{2} m_{2}^{2}}{\left(m_{1} + m_{2}\right)^{2}}}
-$$
-$$ = \pm 0.0003m $$ 
+
+$$\sqrt{\Delta m_{1}^{2} \left(\frac{x_{1}}{m_{1} + m_{2}} - \frac{m_{1} x_{1} + m_{2} x_{2}}{\left(m_{1} +  m_{2}\right)^{2}}\right)^{2} + \Delta m_{2}^{2} \left(\frac{x_{2}}{m_{1} + m_{2}} - \frac{m_{1} x_{1} + m_{2} x_{2}}{\left(m_{1} + m_{2}\right)^{2}}\right)^{2} + \frac{\Delta x_{1}^{2} m_{1}^{2}}{\left(m_{1} + m_{2}\right)^{2}} + \frac{\Delta x_{2}^{2} m_{2}^{2}}{\left(m_{1} + m_{2}\right)^{2}}} $$
+$$ = \pm 0.0003m $$
 
 
 \subsection{Períodos}
@@ -103,13 +113,14 @@ Percebe-se que deve existir uma relação linear entre $T^2D$ e $D^2$.
 
 
 
-  
+
+
+
 \begin{table}[!htbp]
-\caption{Periodos de oscilação relacionados à distância $D$ dos eixo de rotação ao centro de massa. O erro em D é constante igual a $0.009 M$ (propagado a partir do erro em X e em $x_{cm}$) e o erro em $T^2D$ foi propagado a partir do erro em D e em T.}
+\centering
 \def\arraystretch{1.5}
 
-{Tabela 2: Periodos de oscilação relacionados à distância $D$ dos eixo de rotação ao centro de massa.}\\[10pt]
-
+\caption{ Periodos de oscilação relacionados à distância $D$ dos eixo de rotação ao centro de massa.}
 \begin{tabular}{|c|c|c|c|}
 \hline
 D (M)& T(s) & $D^2$ & $T^2D$ \\
@@ -132,6 +143,8 @@ $0.2362\pm0.0003$ & $2.1027 \pm 0.0003$ & $0.0558\pm0.0001$ & $1.045 \pm 0.001$\
 			Erro em $T^2D$ foi propagado a partir do erro em D e em T.\\}
 \end{table}
 
+
+
 Fazendo a regressão linear de $T^2D$ X $D^2$ por mínimos quadrados, obtem-se os coeficientes 
 $$ a = 3.82 \pm 0.02 $$ 
  $$ b = 0.827 \pm 0.003 $$
@@ -140,7 +153,7 @@ onde $a$ é o coeficiente angular e $b$ é o coeficiente linear. A reta formada 
 \begin{figure}[!hbtbp]
 
 \includegraphics[scale=0.55]{index.png} 
-\emph{Gráfico 1: $T^2D$ em função de $D^2$. Nota-se que os dados coletados se encaixam muito bem em uma projeção linear.}
+\emph{Figura 4: Gráfico 1: $T^2D$ em função de $D^2$. Nota-se que os dados coletados se encaixam muito bem em uma projeção linear.}
 
 \label{fig:Grafico}
 \end{figure}
@@ -153,24 +166,32 @@ A interpretação física do coeficiente angular encontrado é, por (\ref{eq:fun
   e seu erro associado, propagado a partir do erro em $a$ é
   $$ \Delta g = \frac{4\pi^2}{a^2} \cdot \Delta a = \pm 0.06 m/s^2 $$
   O valor da gravidade calculado não está de acordo com o valor conhecido de $g =  9.8ms^2$.
-  
+\newpage
 \subsection{Raio de giração}
 
 A interpretação física do coeficiente linear, a partir de (\ref{eq:funcao}), é 
 $$ b = \frac{4\pi^2}{g} \cdot k^2 = 0.827 \pm 0.003 $$
-logo, 
+logo, o raio de giração pode ser obtido por:
 $$ k = \sqrt{\frac{g \cdot b}{4\pi^2}} = 0.465 m $$
+E seu erro, calculado por:
 $$ \Delta k =
 \sqrt{\frac{\Delta b^{2} g}{16 \pi^{2} b} + \frac{\Delta g^{2} b}{16 \pi^{2} g}} 
  =  \pm 0.002  m$$
 
 \subsection{Momento de Inércia}
 O momento de inércia pode ser descrito em função do raio de giração como 
-$$ I_{cm}  = Mk^2 $$
-$$ I_{cm}  = 0.28 (m^2 \cdot Kg)$$
+$$ I_{cm}  = (m_1 + m_2)k^2 $$
+Substituindo os valores, obtemos:
+$$ I_{cm}  = 0.282 (m^2 \cdot Kg)$$
 E o erro $ \Delta I_{cm}$ pode ser calculado a partir da expressão 
-$$\Delta I_{cm}  =\sqrt{(2mk \cdot \Delta k)^2 + (k^2 \cdot \Delta M)^2} = \pm 0.005 (m \cdot Kg) $$
+$$\Delta I_{cm}  =\sqrt{(2mk \cdot \Delta k)^2 + (k^2 \cdot \Delta M)^2} = \pm 0.006 (m \cdot Kg) $$
 
 \section{Conclusões}
-Como o experimento falhou em encontrar ....
+Como o experimento falhou em encontrar um valor para a gravidade de acordo com a teoria conhecida atualmente, também não se pode confiar nos valores encontrados do Raio de Giração (K) e Momento de Inercia (I).
+
+% Stringhini dê seu show
+Esse erro pode ser explicado, ainda que parcialmente pelo erro da aproximação tangente = seno ...
+
+Novos estudos precisam ser feitos que utilizem modelagem mais precisa para obter resultados melhores.
+
 \end{document}
