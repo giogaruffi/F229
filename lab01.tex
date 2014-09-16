@@ -24,7 +24,7 @@
 \newpage
 \section{Resumo}
 O experimento é um estudo do pêndulo composto (formado por uma barra de alumínio e outra ferro acoplada) e seu comportamento. Medida a massa das barras, é realizada a cronometragem dos períodos de oscilação do pêndulo para diferentes configurações.\\
-A partir dos valores dos períodos (T) e das distâncias dos diferentes eixos de rotação ao centro de massa (D) do pêndulo, é feito o gráfico $T^2D$ x $D^2$ representando a função afim $T^2D = (4pi^2/g)D^2 + 4pi^2k^2/g$, sendo k o raio de giração do pêndulo. Assim, utilizando-se o método dos mínimos quadrados, foram obtidos os valores do raio de giração: $k = (0.46 +- 0.02)m$ e da aceleração da gravidade: $g = (10.3 +- 0.6) m/s^2$, valor dentro do esperado, considerando a aceleração da gravidade cerca de $9.8 m/s^2$, dentro da margem de erro calculada. Como o momento de inércia do pêndulo em relação ao centro de massa é dado por $(M1 + M2)*k^2$, foi possível calcular seu valor: $Icm = (0.28 +- 0.02)Kg.m^2$.
+A partir dos valores dos períodos (T) e das distâncias dos diferentes eixos de rotação ao centro de massa (D) do pêndulo, é feito o gráfico $T^2D$ x $D^2$ representando a função afim $T^2D = (4pi^2/g)D^2 + 4pi^2k^2/g$, sendo k o raio de giração do pêndulo. Assim, utilizando-se o método dos mínimos quadrados, foram obtidos os valores do raio de giração: $k = (0.465 \pm 0.001)m$ e da aceleração da gravidade: $g = (10.34 \pm 0.06) m/s^2$, valor não dentro do esperado, tendo o valor da aceleração da gravidade como cerca de $9.8 m/s^2$, mesmo considerando a margem de erro. Como o momento de inércia do pêndulo em relação ao centro de massa é dado por $(M1 + M2)*k^2$, foi possível calcular seu valor: $Icm = (0.28 +- 0.02)Kg.m^2$.
 \section{Objetivos}
 Investigar o movimento de um pêndulo e seu comportamento relacionando as grandezas sobre ele atuantes, como centro de massa, raio de giração e momento de inércia.
 
@@ -77,9 +77,13 @@ $0.7915\pm0.0005$ & 2.1042 & 2.1027 & 2.1027 & 2.1024 & 2.1026 & 2.1023 & 2.1019
 \section{Análise dos Resultados e Discussões}
 \subsection{Centro de Massa}
 A posição do do centro de Massa relativo a extrememidade inferior pode ser calculado como\\
-$$ x_{cm} = \frac{x_1 \cdot M_1 + x_2 \cdot M_2}{M_1 + M_2} = 0.555 M $$\\ \\
+$$ x_{cm} = \frac{x_1 \cdot M_1 + x_2 \cdot M_2}{M_1 + M_2} = 0.5552 M $$\\ \\
 O erro associado à essa medida, propagado a partir dos erros de $x_1$, $M_1$, $x_2$ e $M_2$ é de 
-$$ \Delta x_{cm} =  0.009 m $$
+
+% PUTA QUE O PARIU
+$$ \sqrt{\Delta m_{1}^{2} \left(\frac{x_{1}}{m_{1} + m_{2}} - \frac{m_{1} x_{1} + m_{2} x_{2}}{\left(m_{1} + m_{2}\right)^{2}}\right)^{2} + \Delta m_{2}^{2} \left(\frac{x_{2}}{m_{1} + m_{2}} - \frac{m_{1} x_{1} + m_{2} x_{2}}{\left(m_{1} + m_{2}\right)^{2}}\right)^{2} + \frac{\Delta x_{1}^{2} m_{1}^{2}}{\left(m_{1} + m_{2}\right)^{2}} + \frac{\Delta x_{2}^{2} m_{2}^{2}}{\left(m_{1} + m_{2}\right)^{2}}}
+$$
+$$ = \pm 0.0003m $$ 
 
 
 \subsection{Períodos}
@@ -94,7 +98,7 @@ que pode ser reescrita como
  T^2D = \frac{4\pi^2}{g} \cdot D^2 + \frac{4\pi^2}{g} \cdot k^2 
 \end{equation}
 Sendo que $$D = X - x_{cm} $$ 
-$$ \Delta D = \sqrt{{\Delta X}^2 + {\Delta x_{cm}}^2}  = 0.009 m$$
+$$ \Delta D = \sqrt{{\Delta X}^2 + {\Delta x_{cm}}^2}  = 0.0003 m$$
 Percebe-se que deve existir uma relação linear entre $T^2D$ e $D^2$.
 
 
@@ -110,17 +114,17 @@ Percebe-se que deve existir uma relação linear entre $T^2D$ e $D^2$.
 \hline
 D (M)& T(s) & $D^2$ & $T^2D$ \\
 \hline
-$0.490\pm0.009$ & $1.8870 \pm 0.0003$ & $0.240\pm0.008$ & $1.74 \pm 0.03$\\
+$0.4897\pm0.0003$ & $1.8870 \pm 0.0003$ & $0.2398\pm0.0003$ & $1.744 \pm 0.001$\\
 \hline
-$0.435\pm0.009$ & $1.8873 \pm 0.0004$ & $0.189\pm0.008$ & $1.55 \pm 0.03$\\
+$0.4347\pm0.0003$ & $1.8873 \pm 0.0004$ & $0.1890\pm0.0003$ & $1.549 \pm 0.001$\\
 \hline
-$0.385\pm0.009$ & $1.9019 \pm 0.0007$ & $0.148\pm0.007$ & $1.39 \pm 0.03$\\
+$0.3847\pm0.0003$ & $1.9019 \pm 0.0007$ & $0.1480\pm0.0002$ & $1.392 \pm 0.001$\\
 \hline
-$0.335\pm0.009$ & $1.9341 \pm 0.0002$ & $0.112\pm0.007$ & $1.25 \pm 0.03$\\
+$0.3347\pm0.0003$ & $1.9341 \pm 0.0002$ & $0.1120\pm0.0002$ & $1.252 \pm 0.001$\\
 \hline
-$0.285\pm0.009$ & $1.9953 \pm 0.0006$ & $0.081\pm0.005$ & $1.13 \pm 0.04$\\
+$0.2847\pm0.0003$ & $1.9953 \pm 0.0006$ & $0.0810\pm0.0002$ & $1.134 \pm 0.001$\\
 \hline
-$0.236\pm0.009$ & $2.1027 \pm 0.0003$ & $0.055\pm0.004$ & $1.04 \pm 0.04$\\
+$0.2362\pm0.0003$ & $2.1027 \pm 0.0003$ & $0.0558\pm0.0001$ & $1.045 \pm 0.001$\\
 \hline
 \end{tabular}
 \\
@@ -128,7 +132,10 @@ $0.236\pm0.009$ & $2.1027 \pm 0.0003$ & $0.055\pm0.004$ & $1.04 \pm 0.04$\\
 			Erro em $T^2D$ foi propagado a partir do erro em D e em T.\\}
 \end{table}
 
-Fazendo a regressão linear de $T^2D$ X $D^2$ por mínimos quadrados, obtem-se os coeficientes $$ a = 3.8 \pm 0.2 $$  $$ b = 0.83 \pm 0.04 $$ onde $a$ é o coeficiente angular e $b$ é o coeficiente linear. A reta formada pode ser vista no Gráfico 1, sobreposta aos pontos da tabela.
+Fazendo a regressão linear de $T^2D$ X $D^2$ por mínimos quadrados, obtem-se os coeficientes 
+$$ a = 3.82 \pm 0.02 $$ 
+ $$ b = 0.827 \pm 0.003 $$
+onde $a$ é o coeficiente angular e $b$ é o coeficiente linear. A reta formada pode ser vista no Gráfico 1, sobreposta aos pontos da tabela.
 
 \begin{figure}[!hbtbp]
 
@@ -139,28 +146,31 @@ Fazendo a regressão linear de $T^2D$ X $D^2$ por mínimos quadrados, obtem-se o
 \end{figure}
 \subsection{Gravidade}
 A interpretação física do coeficiente angular encontrado é, por (\ref{eq:funcao}),
- $$ a = \frac{4\pi^2}{g} = 3.8 \pm 0.2$$
+ $$ a = \frac{4\pi^2}{g} = 3.82 \pm 0.02$$
   logo podemos encontrar $g$ como 
 
-  $$ g = \frac{4\pi^2}{3.8} = 10.3 m/s^2 $$ 
+  $$ g = \frac{4\pi^2}{3.82} = 10.34 m/s^2 $$ 
   e seu erro associado, propagado a partir do erro em $a$ é
-  $$ \Delta g = \frac{4\pi^2}{a^2} \cdot \Delta a = \pm 0.6 m/s^2 $$
+  $$ \Delta g = \frac{4\pi^2}{a^2} \cdot \Delta a = \pm 0.06 m/s^2 $$
+  O valor da gravidade calculado não está de acordo com o valor conhecido de $g =  9.8ms^2$.
   
 \subsection{Raio de giração}
 
 A interpretação física do coeficiente linear, a partir de (\ref{eq:funcao}), é 
-$$ b = \frac{4\pi^2}{g} \cdot k^2 = 0.83 \pm 0.04 $$
+$$ b = \frac{4\pi^2}{g} \cdot k^2 = 0.827 \pm 0.003 $$
 logo, 
-$$ k = \sqrt{\frac{g \cdot b}{4\pi^2}} = 0.46 m $$
-$$ \Delta k = \pm 0.02  m$$
+$$ k = \sqrt{\frac{g \cdot b}{4\pi^2}} = 0.465 m $$
+$$ \Delta k =
+\sqrt{\frac{\Delta b^{2} g}{16 \pi^{2} b} + \frac{\Delta g^{2} b}{16 \pi^{2} g}} 
+ =  \pm 0.002  m$$
 
 \subsection{Momento de Inércia}
 O momento de inércia pode ser descrito em função do raio de giração como 
 $$ I_{cm}  = Mk^2 $$
 $$ I_{cm}  = 0.28 (m^2 \cdot Kg)$$
 E o erro $ \Delta I_{cm}$ pode ser calculado a partir da expressão 
-$$\Delta I_{cm}  =\sqrt{(2mk \cdot \Delta k)^2 + (k^2 \cdot \Delta M)^2} = \pm 0.02 (m \cdot Kg) $$
+$$\Delta I_{cm}  =\sqrt{(2mk \cdot \Delta k)^2 + (k^2 \cdot \Delta M)^2} = \pm 0.005 (m \cdot Kg) $$
 
 \section{Conclusões}
-
+Como o experimento falhou em encontrar ....
 \end{document}
