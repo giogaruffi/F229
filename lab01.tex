@@ -25,8 +25,8 @@
 \newpage
 \section{Resumo}
 
-O experimento é um estudo do pêndulo composto (formado por uma barra de alumínio e outra de ferro acoplada) e seu comportamento. Medidas as massas das barras, é realizada a cronometragem dos períodos de oscilação do pêndulo para diferentes configurações.\\\\
-A partir dos valores dos períodos (T) e das distâncias dos diferentes eixos de rotação ao centro de massa (D) do pêndulo, é feito o gráfico $T^2D$ x $D^2$ representando a função afim $T^2D = (4pi^2/g)D^2 + 4pi^2k^2/g$, sendo k o raio de giração do pêndulo. Assim, utilizando-se o método dos mínimos quadrados, foram obtidos os valores do raio de giração $k = (0.465 \pm 0.001)m$ e da aceleração da gravidade $g = (10.34 \pm 0.06) m/s^2$, valor não dentro do esperado, considerando o valor teórico de $9.8 m/s^2$, não abrangido pela margem de erro. Como o momento de inércia do pêndulo em relação ao centro de massa é dado pela fórmula $(M1 + M2)*k^2$, foi possível calcular seu valor como $Icm = (0.28 +- 0.02)Kg.m^2$.
+O experimento é um estudo do pêndulo composto (formado por uma barra de alumínio e outra de ferro acoplada) e seu comportamento. Medidas as massas das barras, é realizada a cronometragem dos períodos de oscilação do pêndulo para diferentes configurações.\\ %Bem, eu prefiro sem salto de linha (há controvérsias).
+São registrados valores dos períodos (T) relacionados às diferentes distâncias entre eixo de rotação e centro de massa (D) do pêndulo, variantes conforme a configração. Depois, é feito o gráfico $T^2D$ x $D^2$, representando a função afim $T^2D = (4pi^2/g)D^2 + 4pi^2k^2/g$ e sendo k o raio de giração do pêndulo. Assim, utilizando o método dos mínimos quadrados, foram obtidos os valores do raio de giração $k = (0.465 \pm 0.001)m$ e da aceleração da gravidade $g = (10.34 \pm 0.06) m/s^2$. Tal valor não consta dentro do esperado, considerando que  teoricamente $g\approx9.8 m/s^2$, o que não foi abrangido pela margem de erro. Como o momento de inércia do pêndulo em relação ao centro de massa é dado pela fórmula $(M_1 + M_2)*k^2$, foi possível calcular seu valor como $Icm = (0.28 \pm 0.02)Kg.m^2$.
 \section{Objetivos}
 Investigar o movimento de um pêndulo e seu comportamento relacionando as grandezas sobre ele atuantes, como centro de massa, raio de giração e momento de inércia.
 
@@ -57,7 +57,7 @@ As medidas de periodo tomadas estão presentes na seguinte tabela, relacionadas 
 
 \begin{table}[!htbp]
 \centering
-\caption{ Medidas do Periodo de oscilação do pêndulo e suas médias aritméticas relacionadas à distância X do eixo de rotação à extremidade inferior do pêndulo.} 	%% Preferi reduzir o título e colocar os erros (mesmo os ctes) na tabela. Podemos mudar isso de novo caso queira.
+\textbf {Tabela 1: Medidas do Periodo de oscilação do pêndulo e suas médias aritméticas relacionadas à distância X do eixo de rotação à extremidade inferior do pêndulo}\\ 	%% Preferi reduzir o título e colocar os erros (mesmo os ctes) na tabela. Podemos mudar isso de novo caso queira.
 
 \def\arraystretch{1.5}
 \begin{tabular}{|l| c c c c c c c|r|}
@@ -120,7 +120,7 @@ Percebe-se que deve existir uma relação linear entre $T^2D$ e $D^2$.
 \centering
 \def\arraystretch{1.5}
 
-\caption{ Periodos de oscilação relacionados à distância $D$ dos eixo de rotação ao centro de massa.}
+\textbf {Tabela 2: Periodos de oscilação relativos à distância $D$ do eixo de rotação ao centro de massa do pêndulo}\\
 \begin{tabular}{|c|c|c|c|}
 \hline
 D (M)& T(s) & $D^2$ & $T^2D$ \\
@@ -165,8 +165,8 @@ A interpretação física do coeficiente angular encontrado é, por (\ref{eq:fun
   $$ g = \frac{4\pi^2}{3.82} = 10.34 m/s^2 $$ 
   e seu erro associado, propagado a partir do erro em $a$ é
   $$ \Delta g = \frac{4\pi^2}{a^2} \cdot \Delta a = \pm 0.06 m/s^2 $$
-  O valor da gravidade calculado não está de acordo com o valor conhecido de $g =  9.8ms^2$.
-\newpage
+  O valor da gravidade calculado não está de acordo com o valor conhecido de $g \approx 9.8m/s^2$.
+
 \subsection{Raio de giração}
 
 A interpretação física do coeficiente linear, a partir de (\ref{eq:funcao}), é 
@@ -187,11 +187,11 @@ E o erro $ \Delta I_{cm}$ pode ser calculado a partir da expressão
 $$\Delta I_{cm}  =\sqrt{(2mk \cdot \Delta k)^2 + (k^2 \cdot \Delta M)^2} = \pm 0.006 (m \cdot Kg) $$
 
 \section{Conclusões}
-Como o experimento falhou em encontrar um valor para a gravidade de acordo com a teoria conhecida atualmente, também não se pode confiar nos valores encontrados do Raio de Giração (K) e Momento de Inercia (I).
+Como o experimento falhou em encontrar um valor para a gravidade de acordo com a teoria conhecida atualmente, também não há grande confiabilidade nos valores encontrados do Raio de Giração (K) e Momento de Inercia (I), considerando as imprecisões apresentadas.
 
 % Stringhini dê seu show
-Esse erro pode ser explicado, ainda que parcialmente pelo erro da aproximação tangente = seno ...
+Esse erro pode ser explicado, ainda que parcialmente pelo erro da aproximação $tg(\theta) = sen(\theta) = \theta$, utilizada para se obter a igualdade $ T = 2\pi\sqrt{\frac{D + \frac{k^2}{D}}{g}} $. Buscando maior precisão, o ideal estaria em desconsiderar tal aproximação e utilizar a versão extensa da relação. No entanto, tal versão, supondo uma angulação $\theta = 20\,^{\circ}$, corrigiria cerca de $1\%$ do erro, o que não é suficiente em si. Outras fontes de erro são as possíveis imprecisões instrumentais de alguma forma desconsideradas, incluindo o conhecimento apenas superficial do modo "pêndulo" apresentado no photogate/cronômetro inteligente.
 
-Novos estudos precisam ser feitos que utilizem modelagem mais precisa para obter resultados melhores.
+Novos estudos precisam ser feitos, de modo que se utilize modelagem mais precisa para obter resultados melhores.
 
 \end{document}
