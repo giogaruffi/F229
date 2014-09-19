@@ -1,6 +1,7 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
+\usepackage[]{units}
 \usepackage{breqn}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -42,11 +43,12 @@
 \end{itemize}
 
 \subsection{Procedimento}
-O pêndulo foi montado usando-se um fio metálico tendo um conjunto de três cilindros de latão acoplados em sua ponta. Foram medidos o diâmetro do fio (com o micrômetro) e contabilizada a massa do conjunto de cilindros (já previamente neles explicitada). Ao lado do da base do pêndulo foi montado o photo-gate conectado a um cronômetro inteligente configurado no modo \emph{Pendulum} para ser realizada a medição dos perídos de rotação. Para cada comprimento L do fio foram feitas 7 medições de período para fazer-se assim um média aritmética. Todas as medições mencionadas estão presentes no relatório
+O pêndulo foi montado usando-se um fio metálico tendo um cilindro de latão acoplado em sua ponta. Foram medidos o diâmetro do fio (com o micrômetro) e contabilizada a massa do cilindro (já previamente neles explicitada). Ao lado do da base do pêndulo foi montado o photo-gate conectado a um cronômetro inteligente configurado no modo \emph{Pendulum} para ser realizada a medição dos perídos de rotação. Para cada comprimento L do fio foram feitas 7 medições de período para fazer-se assim um média aritmética. Todas as medições mencionadas estão presentes no relatório
 
 \begin{figure}[!htbp]
-	\includegraphics[scale=0.50]{03.jpg} 
+	\includegraphics[scale=0.50]{03.jpg}
 	\caption{Medição dos períodos}
+	\label{fig:cilindro}
 \end{figure}
 
 \begin{figure}[!htbp]
@@ -59,7 +61,25 @@ O pêndulo foi montado usando-se um fio metálico tendo um conjunto de três cil
 \subsection{Dados Obtidos}
 O valor do diâmetro do fio é:
 $$ d = (0.56 \pm 0.01) mm $$
-Sendo $0.01 mm$ o erro do micrômetro.\\
+Sendo $0.01 mm$ o erro intrumental do micrômetro.\\\\
+Massa do conjunto de cilindros:
+$$ m = (1198.2 \pm 0.1) g $$
+Sendo $0.1 g$ o erro intrumental da balança usada.\\\\
+Os valores dos períodos medidos (T) para cada comprimento da linha (L):
+
+\subsubsection{Analise do cilindro}
+Para fazer o cálculo do momento de inércia do cilindro utilizado no pêndulo ele foi subdividido em três cilindros (Figure \ref{fig:cilindro}), e foram medidos os diâmetros e alturas de cada um, para assim calcular seus volumes e determinar a massa de cada um separadamente.
+
+Diâmetros:
+$$ D_1 = (20.05 \pm 0.05)mm $$
+$$ D_2 = (80.15 \pm 0.05)mm $$
+$$ D_3 = (99.35 \pm 0.05)mm $$
+
+Alturas:
+$$ h_1 = (10.05 \pm 0.05)mm $$
+$$ h_2 = (8.05 \pm 0.05)mm $$
+$$ h_3 = (12.40 \pm 0.05)mm $$
+Sendo $0.05mm$ o erro instrumental do paquímetro
 
 \section{Análise dos Resultados e Discussões}
 
