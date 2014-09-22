@@ -96,7 +96,7 @@ L $(m)$ & \multicolumn{7}{c|}{Medidas de Periodo $(s)$} & Periodo Médio $(s)$ \
 0.056 & 2.0772 & 2.0758 & 2.0705 & 2.0706 & 2.0874 & 2.0646 & 2.0736 & $2.074 \pm 0.002$\\
 \hline
 \end{tabular} 
-\emph{Nota: erro instrumental do cronômetro = $0.0001$s.\\ erro total calculado com base nos erros estatísticos e instrumentais.}
+\emph{Nota: Erro em no comprimento do fio $(L)$ = $0.001$ devido a dificuldade da medição (figura 2) \\ instrumental do cronômetro = $0.0001$s.\\ erro total calculado com base nos erros estatísticos e instrumentais.}
 
 \end{table}
 
@@ -147,9 +147,79 @@ $$I_0 = , \; \; \; \; \Delta I_0 = .$$.
 
 
 \subsection{Determinação do módulo de cisalhamento}
-%Determinação da reta e explicação dos coeficientes aqui, e depois... %
-O módulo de cisalhamento $G$ do material do fio e seu erro podem ser expressos, em função do coeficiente angular da reta, por meio da relação
-$$G = 8\pi\frac {I_0}{ar^4}, \; \; \; \; \Delta G = \frac {8\pi}{ar^4} \sqrt{\Delta I_0^2 + I_0^2 \Delta a^2 + 16 \frac{I_0^2}{r^{10}} \Delta r^2}.$$
+\subsubsection{Regressão linear}
+A equação 
+$$ T = \sqrt{\frac{8\pi I_0 L}{G r^2}} $$
+Pode ser reescrita como 
+$$ T^2 = \frac{8\pi I_0 L}{G r^2} $$
+$$ T^2 = \frac{8\pi I_0}{G r^2} \cdot L $$
+Vemos então que deve existir uma relação linear entre $T^2$ e $L$. A tabela 2 demonstra essa relação.
+
+\begin{table}[!htbp]
+\centering
+\def\arraystretch{1.3}
+\caption{Periodos $(T)$ e $T^2$, relacionados ao comprimento do fio ($L$)} 
+\label{Resultados}
+\begin{tabular}{|l|c|c|}
+\hline
+$L$ $(m)$ & $T$ $(s)$ & $T^2$ $(s^2)$ \\
+\hline 
+0.540 & $5.797 \pm 0.002$ & $33.61 \pm 0.02 $ \\
+\hline 
+0.503 & $5.597 \pm 0.001$ & $31.32 \pm 0.01 $ \\
+\hline 
+0.415 & $5.107 \pm 0.001$ & $26.07 \pm 0.01 $ \\
+\hline 
+0.360 & $4.774 \pm 0.002$ & $22.79 \pm 0.02 $ \\
+\hline
+0.298 & $4.359 \pm 0.001$ & $19.000 \pm 0.008 $ \\
+\hline
+0.234 & $3.887 \pm 0.003$ & $15.10 \pm 0.02 $ \\
+\hline
+0.155 & $3.215 \pm 0.001$ & $10.335 \pm 0.005 $ \\
+\hline 
+0.142 & $3.081 \pm 0.009$ & $9.49 \pm 0.05 $ \\
+\hline 
+0.088 & $2.512 \pm 0.005$ & $6.31 \pm 0.02 $ \\
+\hline 
+0.056 & $2.074 \pm 0.002$ & $4.30 \pm 0.01 $ \\
+\hline 
+
+
+\end{tabular} \\
+
+\end{table}
+
+Fazendo a regressão linear $T^2$ por $L$ obtem-se os coeficientes
+$$ a = 60.54 \pm 0.02 $$
+
+$$ b = 0.951 \pm 0.006 $$
+
+A sobreposição dessa reta aos pontos da tabela pode ser vista na Figura 3.
+
+\begin{figure}[!htbp]
+ 
+\includegraphics[scale=0.6]{graf1.png}
+\caption{Gráfico da regressão linear de $T^2$ por $L$, sobreposta aos pontos obtidos experimentalmente.} 
+\end{figure} 
+\subsubsection{Estudo do coeficiente linear}
+
+A interpretação física do coeficiente linear $a$ é 
+$$ a = \frac{8\pi I_0}{G r^2}  $$
+então obtemos 
+
+$$ G = \frac{8\pi I_0}{a r^2}  $$
+substituindo $r = D/2$, obtemos
+$$ G = \frac{32 \pi I_0}{D^{2} a} = 1685632.5261933 \pi I $$
+
+$$ \Delta G = \sqrt{\frac{1024 \pi^{2} {\Delta I_0}^{2}}{D^{4} a^{2}} + \frac{1024 \pi^{2} {\Delta a}^{2} {I_0}^{2}}{D^{4} a^{4}} + \frac{4096 \pi^{2} {\Delta D}^{2} {I_0}^{2}}{D^{6} a^{2}}} $$
+$$ = \sqrt{2841357013360.82 \pi^{2} {\Delta I}^{2} + 3624637429.80694 \pi^{2} I^{2}} $$
+
+
+
+
+
+
 
 \section{Conclusões}
 
