@@ -1,7 +1,7 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
-%\usepackage[brazilian]{babel}
+\usepackage[brazilian]{babel}
 \usepackage{breqn}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -156,8 +156,8 @@ $$I_0 = 1.295 \cdot 10^{-3} \; \; kg \cdot m^2, \; \; \; \; \Delta I_0 = 6 \cdot
 A equação 
 $$ T = \sqrt{\frac{8\pi I_0 L}{G r^2}} $$
 Pode ser reescrita como 
-$$ T^2 = \frac{8\pi I_0 L}{G r^2} $$
-$$ T^2 = \frac{8\pi I_0}{G r^2} \cdot L $$
+$$ T^2 = \frac{8\pi I_0 L}{G r^4} $$
+$$ T^2 = \frac{8\pi I_0}{G r^4} \cdot L $$
 Vemos então que deve existir uma relação linear entre $T^2$ e $L$. A tabela 2 demonstra essa relação.
 
 \begin{table}[!htbp]
@@ -200,7 +200,7 @@ $$ a = (60.54 \pm 0.02) s^2/m $$
 
 $$ b = (0.951 \pm 0.006) m $$
 
-A sobreposição dessa reta aos pontos da tabela pode ser vista na Figura 3.
+Nota-se que segundo a linearização da equação original, o coeficiente linear deveria ser nulo, o que não condiz com a regressão linear dos dados experimentais. A sobreposição dessa reta aos pontos da tabela pode ser vista na Figura 3.
 
 \begin{figure}[!htbp]
  
@@ -217,12 +217,15 @@ $$ G = \frac{8\pi I_0}{a r^4}  $$
 sendo que $r = d/2$, $\Delta r = {\Delta d}/{2} $. Logo,
 
  % substituir os dados reais %
-$$ G = 21500414874914.6 \pi I $$
+$$ G =  87 \cdot 10^9 Pa $$
 
 $$ \Delta G = \sqrt{\frac{64 \pi^{2} {\Delta I_0}^{2}}{a^{2} r^{8}} + \frac{64 \pi^{2} {\Delta a}^{2} {I_0}^{2}}{a^{4} r^{8}} + \frac{256 \pi^{2} {\Delta r}^{2} {I_0}^{2}}{a^{2} r^{10}}} $$
 
 
-$$ = \sqrt{2841357013360.82 \pi^{2} {\Delta I}^{2} + 3624637429.80694 \pi^{2} I^{2}}$$
+$$ \Delta G = \pm 6 \cdot 10^9 Pa$$
+Assim, o valor calculado a partir do experimento não condiz com o valor conhecido para o Módulo de Cisalhamento do aço, que é de $75.8 \cdot 10^9 Pa$.
+
+% Insert Migué Here % 
 
 
 
