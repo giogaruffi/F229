@@ -1,7 +1,7 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
-\usepackage[brazilian]{babel}
+%\usepackage[brazilian]{babel}
 \usepackage{breqn}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -123,27 +123,31 @@ sendo $0.05mm$ o erro instrumental do paquímetro.\\
 A partir de suas dimensões, o volume ($V_n$) e seu erro ($\Delta V_n$) de cada cilindro foi calculado a partir da fórmula
 $$V_n = \frac{\pi D_n^2 h_n}{4}, \; \; \;  \; \Delta V_n = \frac {\pi D_n^2}{4} \sqrt{h_n^2 \Delta r_n^2 + r^2 \Delta h_n^2},$$
 resultando em:
-$$V_2 = , \; \; \; \; \Delta V_1 = ,$$
-$$V_2 = , \; \; \; \; \Delta V_2 = ,$$ 
-$$V_3 = , \; \; \; \; \Delta V_3 = .$$ 
+$$V_1 = 3.17 \cdot 10 ^ {-6} \; m^3, \; \; \; \; \Delta V_1 = 2 \cdot 10 ^ {-8} \; m^3,$$
+$$V_2 = 4.06 \cdot 10 ^ {-5} \; m^3, \; \; \; \; \Delta V_2 = 3 \cdot 10 ^ {-7} \; m^3,$$ 
+$$V_3 = 9.61 \cdot 10 ^ {-5} \; m^3, \; \; \; \; \Delta V_3 = 4 \cdot 10 ^ {-7} \; m^3.$$ 
 
-Desse modo, e considerando as massas dos cilindros praticamente homogêneas, foi determinado a massa de cada um em relação ao total $M$ a a partir da relação
-$$M_n = \frac{V_n}{V} M, \; \; \; \; \Delta M_n = \sqrt{\frac{M^2}{V^2} \Delta V_n^2 + \frac{V_n^2}{V^2} \Delta M^2 + \frac{V_n^2}{V^4} \Delta V^2},$$
-sendo $V$ o volume total dos cilindros e $\Delta V = \sqrt{3} \Delta V_{cilindro}$, levando em conta que os erros do volume dos cilindros é cte.
+Então, a partir das fórmulas
+$$V = V_1 + V_2 + V_3 \; , \; \; \; \; \Delta V = \sqrt{\Delta V_1^2 + \Delta V_2^2 + \Delta V_3^2}\;, $$
+
+temos que:
+
+$$V = 1.399 \cdot 10 ^ {-4} \; m^3, \; \; \; \; \Delta V = 5 \cdot 10^ {-7} \; m^3.$$
+
 Com isso, tem-se que:
-$$M_1 = , \; \; \; \; \Delta M_1 = ,$$
-$$M_2 = , \; \; \; \; \Delta M_2 = ,$$
-$$M_3 = , \; \; \; \; \Delta M_3 = .$$
+$$M_1 = 2.72 \cdot 10^{-2} \; kg, \; \; \; \; \Delta M_1 = 2 \cdot 10^{-4} \; kg,$$
+$$M_2 = 3.48 \cdot 10^{-1} \; kg, \; \; \; \; \Delta M_2 = 3 \cdot 10^{-3} \; kg,$$
+$$M_3 = 8.23 \cdot 10^{-1} \; kg, \; \; \; \; \Delta M_3 = 5 \cdot 10^{-3} \; kg.$$
 
-Calcula-se, a partir daí, o Momento de inércia $I_{0n}$ de cada cilindro com seu erro $\Delta I_{0n}$. Sabendo que:
+Calcula-se, a partir daí, o Momento de inércia $I_{0n}$ de cada cilindro com seu erro $\Delta I_{0n}$, sabendo-se que:
 $$I_{0n} = \frac{M_nD_n^2}{8}, \; \; \; \; \Delta I_{0n} = \frac {1}{2} \sqrt{M_n^2D_n^2 \Delta D_n^2 + \frac{D_n^2}{4} \Delta M_n^2},$$
 
 Então,
-$$I_{01} =, \; \; \; \; \Delta I_{01} = ,$$
-$$I_{02} =, \; \; \; \; \Delta I_{02} = ,$$
-$$I_{03} =, \; \; \; \; \Delta I_{03} = ,$$
+$$I_{01} = 1.37 \cdot 10^{-6} \; \; kg \cdot m^2, \; \; \; \; \Delta I_{01} = 1 \cdot 10^{-8} \; \; kg \cdot m^2,$$
+$$I_{02} = 2.79 \cdot 10^{-4} \; \; kg \cdot m^2, \; \; \; \; \Delta I_{02} = 2 \cdot 10^{-6} \; \; kg \cdot m^2,$$
+$$I_{03} = 1.015 \cdot 10^{-3} \; \; kg \cdot m^2, \; \; \; \; \Delta I_{03} = 6 \cdot 10^{-6} \; \; kg \cdot m^2,$$
 e logo, como o momento de inércia total $I_0$ é a soma dos momentos de inércia dos cilindros,
-$$I_0 = , \; \; \; \; \Delta I_0 = .$$.
+$$I_0 = 1.295 \cdot 10^{-3} \; \; kg \cdot m^2, \; \; \; \; \Delta I_0 = 6 \cdot 10^{-6} \; \; kg \cdot m^2.$$
 
 
 
