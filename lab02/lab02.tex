@@ -1,7 +1,7 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
-\usepackage{caption}
+\usepackage[brazilian]{babel}
 \usepackage{breqn}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -28,6 +28,7 @@
 
 
 \section{Objetivos}
+Calcular o módulo de Cisalhamento de um fio metálico, a partir do estudo da relação do periodo $(T)$ e comprimento do fio $(L)$ em um pêndulo de torção.
 
 
 \section{Procedimento Experimental e Coleta de Dados}
@@ -43,7 +44,7 @@
 \end{itemize}
 
 \subsection{Procedimento}
-O pêndulo foi montado usando-se um fio metálico tendo um cilindro de latão acoplado em sua ponta. Foram medidos o diâmetro do fio (com o micrômetro) e contabilizada a massa do cilindro (já previamente neles explicitada). Ao lado do da base do pêndulo, foi montado o photo-gate conectado a um cronômetro inteligente configurado no modo \emph{Pendulum}, para ser realizada a medição dos perídos de rotação. Para cada comprimento L do fio foram feitas 7 medições de período para fazer-se assim uma média aritmética. Todas as medições mencionadas foram registradas no relatório. 
+O pêndulo foi montado usando-se um fio metálico tendo um cilindro de latão acoplado em sua ponta. Foram medidos o diâmetro do fio (com o micrômetro) e contabilizada a massa do cilindro (já previamente neles explicitada). Ao lado do da base do pêndulo, foi montado o photo-gate conectado a um cronômetro inteligente configurado no modo \emph{Pendulum}, para ser realizada a medição dos perídos de rotação. Para cada comprimento L do fio foram feitas 7 medições de período para fazer-se assim uma média aritmética. Todas as medições mencionadas foram registradas no relatório.  A montagem do experimento pode ser vista nas figuras 1 e 2.
 
 \begin{figure}[!htbp]
 	\includegraphics[scale=0.50]{03.jpg}
@@ -191,9 +192,9 @@ $L$ $(m)$ & $T$ $(s)$ & $T^2$ $(s^2)$ \\
 \end{table}
 
 Fazendo a regressão linear $T^2$ por $L$ obtem-se os coeficientes
-$$ a = 60.54 \pm 0.02 $$
+$$ a = (60.54 \pm 0.02) s^2/m $$
 
-$$ b = 0.951 \pm 0.006 $$
+$$ b = (0.951 \pm 0.006) m $$
 
 A sobreposição dessa reta aos pontos da tabela pode ser vista na Figura 3.
 
@@ -205,15 +206,19 @@ A sobreposição dessa reta aos pontos da tabela pode ser vista na Figura 3.
 \subsubsection{Estudo do coeficiente linear}
 
 A interpretação física do coeficiente linear $a$ é 
-$$ a = \frac{8\pi I_0}{G r^2}  $$
-então obtemos 
+$$ a = \frac{8\pi I_0}{G r^4}  $$
+isolando G, obtemos:
 
-$$ G = \frac{8\pi I_0}{a r^2}  $$
-substituindo $r = D/2$, obtemos
-$$ G = \frac{32 \pi I_0}{D^{2} a} = 1685632.5261933 \pi I $$
+$$ G = \frac{8\pi I_0}{a r^4}  $$
+sendo que $r = d/2$, $\Delta r = {\Delta d}/{2} $. Logo,
 
-$$ \Delta G = \sqrt{\frac{1024 \pi^{2} {\Delta I_0}^{2}}{D^{4} a^{2}} + \frac{1024 \pi^{2} {\Delta a}^{2} {I_0}^{2}}{D^{4} a^{4}} + \frac{4096 \pi^{2} {\Delta D}^{2} {I_0}^{2}}{D^{6} a^{2}}} $$
-$$ = \sqrt{2841357013360.82 \pi^{2} {\Delta I}^{2} + 3624637429.80694 \pi^{2} I^{2}} $$
+ % substituir os dados reais %
+$$ G = 21500414874914.6 \pi I $$
+
+$$ \Delta G = \sqrt{\frac{64 \pi^{2} {\Delta I_0}^{2}}{a^{2} r^{8}} + \frac{64 \pi^{2} {\Delta a}^{2} {I_0}^{2}}{a^{4} r^{8}} + \frac{256 \pi^{2} {\Delta r}^{2} {I_0}^{2}}{a^{2} r^{10}}} $$
+
+
+$$ = \sqrt{2841357013360.82 \pi^{2} {\Delta I}^{2} + 3624637429.80694 \pi^{2} I^{2}}$$
 
 
 
@@ -222,6 +227,7 @@ $$ = \sqrt{2841357013360.82 \pi^{2} {\Delta I}^{2} + 3624637429.80694 \pi^{2} I^
 
 
 \section{Conclusões}
+
 
 
 \end{document}
